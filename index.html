@@ -1,0 +1,689 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+<style type="text/css">
+	body{
+		/*position: relative;
+		background: #EFF2F4;*/
+		font: normal 13px "宋体" !important;
+	}
+	body,div,ul,li,p,a,img{
+		padding: 0;
+		margin: 0;
+	}
+	/*右侧悬浮菜单*/
+	.slide{
+		width: 50px;
+		height: 250px;
+		position: fixed;
+		top: 50%;
+		margin-top: -126px;
+		background: #018D75;
+		left: 0;
+		border-radius: 5px 0 0 5px;
+		z-index: 999;
+	}
+	.slide ul{
+		list-style: none;
+	}
+	.slide .icon li{
+		width: 49px;
+		height: 50px;
+		background: url(img/icon.png) no-repeat;
+	}
+	.slide .icon .up{
+		background-position:-330px -120px ;
+	}
+	.slide .icon li.qq{
+		background-position:-385px -73px ;
+	}
+	.slide .icon li.tel{
+		background-position:-385px -160px ;
+	}
+	.slide .icon li.wx{
+		background-position:-385px -120px ;
+	}
+	.slide .icon li.down{
+		background-position:-330px -160px ;
+	}
+	.slide .info{
+		top: 50%;
+		height: 147px;
+		position: absolute;
+		left: 100%;
+		background: #018D75;
+		width: 0px;
+		overflow: hidden;
+		margin-top: -73.5px;
+		transition:0.5s;
+		border-radius:4px 0 0 4px ;
+	}
+	.slide .info.hover{
+		width: 145px;
+		
+	}
+	.slide .info li{
+		width: 145px;
+		color: #CCCCCC;
+		text-align: center;
+	}
+	.slide .info li p{
+		font-size: 1em;
+		line-height: 2em;
+		padding: 5px;
+		text-align: left;
+	}
+	.slide .info li.qq p a{
+		display: block;
+		margin-top: 5px;
+		width: 100px;
+		height: 32px;
+		line-height: 32px;
+		color: #00DFB9;
+		font-size: 16px;   
+		text-align: center;
+		text-decoration: none;
+		border: 1px solid #00DFB9;
+		border-radius: 5px;
+	}
+	.slide .info li.qq p a:hover{
+		color: #FFFFFF;
+		border: none;
+		background: #00E0DB;
+	}
+	.slide .info li div.img{
+		height: 100%;
+		background: #DEFFF9;
+		margin: 2px 10px 2px 10px;
+	}
+	.slide .info li div.img img{
+		width: 100%;
+		height: 100%;
+	}
+	/*控制菜单的按钮*/
+	.index_cy{
+		width: 30px;
+		height: 30px;
+		background: url(img/index_cy.png);
+		position: fixed;
+		left: 0;
+		top: 50%;
+		margin-top: 140px;
+		background-position: 62px 0;
+		cursor: pointer;
+	}
+	.index_cy2{
+		width: 30px;
+		height: 30px;
+		background: url(img/index_cy.png);
+		position: fixed;
+		left: 0;
+		top: 50%;
+		margin-top: 140px;
+		background-position: 30px 0;
+		cursor: pointer;
+	}
+	
+	/*自适应 当屏小于1050时隐藏*/
+	@media screen and (max-width: 1050px) {
+		.slide{
+			display: none;
+		}
+		#btnmenu{
+			display: none;
+		}
+		
+	}
+</style>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=yes" />
+	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>上海奇趣游乐设备有限公司</title>
+	<meta name="keywords" content="上海奇趣游乐设备有限公司">
+	<meta name="description" content="上海奇趣游乐设备有限公司位于上海浦东新区，紧邻上海浦东国际机场，交通便利、环境优美。现有标准化厂房三千多平方米，公司产品取得欧洲CE认证，符合国 内外安全标准，同时获得了多项发明专利及产品外观设计专利和实用新型专利，并于2012年成功成为中国游艺机游乐园协会CAAPA和国际游艺机游乐园协会 IAAPA会员。
+
+	    公司始终以信誉求发展、以质量求生存为宗旨，坚持以人为本、与时俱进科技创新，公司将一如既往努力打造“奇趣”品牌，为国内外客户呈上一流的产品，同时也真诚地为用户提供最优质的服务。
+
+
+	    欢迎新老客户来电来访！">
+	<link href="images/favicon.ico" rel="shortcut icon" />
+
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/hint.css">
+	 <script src="js/jquery.min.js" type="text/javascript"></script>
+	  <script src="js/index.js"></script>
+	  <script src="js/jquery.js"></script>
+	  <!-- 客服 S-->
+		<script src="js/jquery.min.js"></script>
+	  <!-- 客服 E-->
+	  <script type="text/javascript">
+	$(function(){  
+	            $(".foot").find('a[href*=#],area[href*=#]').click(function() {  
+	                console.log(this.pathname)  
+	                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {  
+	                    var $target = $(this.hash);  
+	                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');  
+	                    if ($target.length) {  
+	                        var targetOffset = $target.offset().top;  
+	                        $('html,body').animate({  
+	                                    scrollTop: targetOffset  
+	                                },  
+	                                1000);  
+	                        return false;  
+	                    }  
+	                }  
+	            });  
+
+	            /*客服 S*/
+	            	$('.slide .icon li').not('.up,.down').mouseenter(function(){
+						$('.slide .info').addClass('hover');
+						$('.slide .info li').hide();
+						$('.slide .info li.'+$(this).attr('class')).show();//.slide .info li.qq
+					});
+					$('.slide').mouseleave(function(){
+						$('.slide .info').removeClass('hover');
+					});
+					
+					$('#btnmenu').click(function(){
+						$('.slide').toggle();
+						if($(this).hasClass('index_cy')){
+							$(this).removeClass('index_cy');
+							$(this).addClass('index_cy2');
+						}else{
+							$(this).removeClass('index_cy2');
+							$(this).addClass('index_cy');
+						}
+						
+					});
+	            /*客服 E*/
+	        }) 
+	</script>
+	</head>
+	<body>
+
+	<div id="top"></div>
+		<header>
+			<center><div class="head">
+				<div class="logo"><a href="index.html" title="奇趣"><img src="images/logo.png" title="奇趣" alt="奇趣logo"></a></div>
+				<ul class="nav">
+	            			   <li><a href="index.html">首页<p></p></a></li>
+	               <!--  一级栏目循环开始  -->
+				   <li><a href="pages/about.html">关于奇趣<p></p></a></li>
+				   <!--  一级栏目循环开始  -->
+				   <li class="cur"><a href="pages/show.html">产品展示<p></p></a></li>
+				   <!--  一级栏目循环开始  -->
+				   <li><a href="pages/news.html">新闻资讯<p></p></a></li>
+				   <!--  一级栏目循环开始  -->
+				   <li><a href="pages/contact.html">联系我们<p></p></a></li>
+				   <!--  一级栏目循环结束-->
+	            			</ul>
+				<div class="language">
+					<h3>LANGUAGE</h3>
+					<ul>
+						<li>
+							<a href="javascript:void(0);" title="">CH</a>
+						</li>
+					</ul>
+					<h3 style="margin-left: 20px;">TEL: 0215-8260377 </h3>
+				</div>  
+				</div></center>
+		</header> 
+		<!-- 客服 S -->
+						<div style="height:2000px;"></div>
+
+						<!--右侧悬浮菜单-->
+						<div class="slide">
+							<ul class="icon">
+								<li class="up" title="客服"></li>
+								<li class="qq"></li>
+								<li class="tel"></li>
+								<li class="wx"></li>
+								<li class="down" title="客服"></li>
+							</ul>
+							<ul class="info">
+								<li class="qq">
+									<p>客服1<a href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes" target="_blank">在线咨询</a></p>
+									<p>客服2<a href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes" target="_blank">在线咨询</a></p>
+								</li>
+								<li class="tel"> 
+									<p>咨询热线：<br>0215-8260377<br>手机 徐：<br>139 6217 7626</p>
+								</li>
+								<li class="wx">
+									官方微信：<div class="img"><img src="images/wechat.png" /></div>
+								</li>
+							</ul>
+						</div>
+						<div id="btnmenu" class="index_cy"></div>
+		<!-- 客服 E -->
+		 <div id="scrollPage">
+	    <ul class="list">
+	      <li class="list_li">
+	      	<div class="first section">
+	        <div class="container fadeIn">
+	        <script src="js/responsiveslides.min.js" type="text/javascript"></script>
+	        <script>
+					jQuery(function () {
+						jQuery("#slider").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: true,
+							speed: 1000,
+							namespace: "callbacks",
+							before: function () {
+								jQuery('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								jQuery('.events').append("<li>after event fired.</li>");
+							}
+						});
+					});
+				</script>
+				<div class="slider">
+				<div class="callbacks_container">
+				<div class="wrapper">
+					<ul class="rslides" id="slider">
+						<li>
+							<div class="slider-img">
+								<img src="images/banner_bg1.png" class="img-responsive banner_bg">
+							    <img src="images/banner_logo.png" class="banner_logo">
+					            <img src="images/banner_bottom.png" class="banner_bottom">
+							</div>
+						</li>
+						<li>
+							<div class="slider-img">
+							    <img src="images/banner_bg2.png" class="img-responsive banner_bg">
+							    <img src="images/banner_logo.png" class="banner_logo">
+					            <img src="images/banner_bottom.png" class="banner_bottom">
+							</div>
+						</li>
+						<li>
+							<div class="slider-img">
+							    <img src="images/banner_bg3.png" class="img-responsive banner_bg">
+							    <img src="images/banner_logo.png" class="banner_logo">
+					            <img src="images/banner_bottom.png" class="banner_bottom">
+							</div>
+						</li>
+						<li>
+							<div class="slider-img">
+							    <img src="images/banner_bg4.png" class="img-responsive banner_bg">
+							    <img src="images/banner_logo.png" class="banner_logo">
+					            <img src="images/banner_bottom.png" class="banner_bottom">
+							</div>
+						</li>
+						<li>
+							<div class="slider-img">
+							    <img src="images/banner_bg5.png" class="img-responsive banner_bg">
+							    <img src="images/banner_logo.png" class="banner_logo">
+					            <img src="images/banner_bottom.png" class="banner_bottom">
+							</div>
+						</li>
+
+					</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+	    </div>
+	<script>
+	$(document).ready(function(){
+	  var clientH=document.documentElement.clientHeight; 
+	  var clientW=document.documentElement.clientWidth;
+	  var imgBl=1920/1080;
+	  var clienBl=clientW/clientH;
+	  var bannerH = $('.banner_bg');
+	 if(clienBl>imgBl){
+		  bannerH.css('height', 'auto');
+	  }else{
+		  bannerH.css('height', '100%');
+	  }
+
+		});
+	</script>
+	     <div style="clear: both"></div>
+	      </li>
+	      <li class="list_li">
+	      	    <div class="second section">
+	        <div class="container">  
+	        <div class="title">
+	            <h3>尽情释放     <span>上海奇趣</span>，更多乐趣等你来探索！</h3>
+	            <p><img src="images/fg.png"><span>product</span></p>
+	        </div>
+	        <ul class="lb">
+	                			<li><a href="pages/shows/newpro.html"><h1>最新产品</h1><h2>New products</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show1.html"><img src="uploadfile/20171228034903822.jpg"><h1>类别一</h1><h2>Flying Tower</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show2.html"><img src="uploadfile/20171228035006245.jpg"><h1>类别二</h1><h2>top class</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show3.html"><img src="uploadfile/20171228035039180.jpg"><h1>类别三</h1><h2>self-control aircraft</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show4.html"><img src="uploadfile/20171228035348540.jpg"><h1>类别四</h1><h2>Roller coasters</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show5.html"><img src="uploadfile/20171228035922659.jpg"><h1>类别五</h1><h2>puddle jumper</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show6.html"><img src="uploadfile/20171228035708685.jpg"><h1>类别六</h1><h2>Overhead navigation</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show7.html"><img src="uploadfile/20171228040207488.jpg"><h1>类别七</h1><h2>Water Entertainment</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show8.html"><img src="uploadfile/20171228040251519.jpg"><h1>类别八</h1><h2>Unpowered class</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show9.html"><img src="uploadfile/20171228040353639.jpg"><h1>类别九</h1><h2>Airbus</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show10.html"><img src="uploadfile/20171228034640764.jpg"><h1>类别十</h1><h2>Ferris wheel type</h2><img src="images/dian.png" class="dian"></a></li>
+						<li><a href="pages/shows/show11.html"><img src="uploadfile/20171228034841313.jpg"><h1>类别十一</h1><h2>Turn equine</h2><img src="images/dian.png" class="dian"></a></li>
+			  
+	        </ul>
+	<link href="css/demos.css" rel="stylesheet" />
+
+	<script src="js/jquery.roundabout2.js"></script>
+	<script>
+				$(document).ready(function() {
+					$('.lb').roundabout();
+				});
+			</script>
+	        </div>
+	    </div>
+	     <div style="clear: both"></div>
+	      </li>
+	      <li class="list_li">
+	      	<div class="third section">
+	        <div class="container">
+				<div class="index_about">
+					<div class="i_a_main">
+						<img src="images/inabout.png">
+						<div class="word">
+							
+							                                                            <h1>上海奇趣游乐设备有限公司</h1>
+	<p>上海奇趣游乐设备有限公司位于上海浦东新区，紧邻上海浦东国际机场，交通便利、环境优美。现有标准化厂房三千多平方米，公司产品取得欧洲CE认证，符合国 内外安全标准，同时获得了多项发明专利及产品外观设计专利和实用新型专利，并于2012年成功成为中国游艺机游乐园协会CAAPA和国际游艺机游乐园协会 IAAPA会员。
+	</p>
+	<p>公司始终以信誉求发展、以质量求生存为宗旨，坚持以人为本、与时俱进科技创新，公司将一如既往努力打造“奇趣”品牌，为国内外客户呈上一流的产品，同时也真诚地为用户提供最优质的服务。欢迎新老客户来电来访！                     </div>
+						<div style="clear: both"></div>
+	                    <a href="pages/about.html" class="set_1_btn Vbtn-1"> 
+	                       <svg>
+			                   <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
+			               </svg> 查看更多 
+			            </a> 
+					</div>
+				</div>
+	        </div>
+	    </div>
+	     <div style="clear: both"></div>
+	      </li>
+	      <li class="list_li">
+	      	<div class="fourth section">
+	        <div class="container">
+	        <div class="title">
+	            <h3>新闻<span>资讯</span></h3>
+	            <p><img src="images/fg.png"><span>information</span></p>
+	        </div>
+	        <div class="track">
+	        <div class="view-port">
+
+	        <div id="example-5" class="slider-container">
+	         
+	                  <div class="item">
+	            <!--<img src="#/uploadfile/2017/1117/20171117021641303.jpg">--><div class="item_img" style="background: url(uploadfile/20171117021641303.jpg) no-repeat center;background-size: cover"></div>
+				  <div class="item_word">
+					  <h1>热烈祝贺奇趣集团潍坊145米摩天轮完成型式试验</h1>
+					  <p>2017年9月15日，奇趣集团潍坊145米无轴摩天轮顺利完成型式试验。潍坊白浪河大桥工程为滨海新区核心景观带上的关键节点，定位为地标性节点建</p>
+					  <span class="icon-time"><span>2017-09-15</span></span>
+					  <div style="clear: both"></div>
+					  <a href="pages/show.html">查看详情</a>
+				  </div>
+	          </div>
+	                  <div class="item">
+	            <!--<img src="#/uploadfile/2017/1117/20171117021019255.jpg">--><div class="item_img" style="background: url(uploadfile/20171117021019255.jpg) no-repeat center;background-size: cover"></div>
+				  <div class="item_word">
+					  <h1>热烈祝贺上海奇趣游乐设备有限公司中标西宁新华联国际游乐</h1>
+					  <p>热烈祝贺上海奇趣游乐设备有限公司中标西宁新华联国际游乐城童梦乐园摩天轮项目</p>
+					  <span class="icon-time"><span>2017-07-05</span></span>
+					  <div style="clear: both"></div>
+					  <a href="pages/show.html">查看详情</a>	
+				  </div>
+	          </div>
+	                  <div class="item">
+	            <!--<img src="#/uploadfile/2017/1117/20171117020755285.jpg">--><div class="item_img" style="background: url(uploadfile/20171117020755285.jpg) no-repeat center;background-size: cover"></div>
+				  <div class="item_word">
+					  <h1>热烈祝贺***********************</h1>
+					  <p>2017年7月3日，江西羊狮慕卧在云端项目设备签约仪式在奇趣控股集团总部举行。奇趣控股集团董事长马定远同志和江西市安福县龚海生书记出席签</p>
+					  <span class="icon-time"><span>2017-07-04</span></span>
+					  <div style="clear: both"></div>
+					  <a href="pages/show.html">查看详情</a>
+				  </div>
+	          </div>
+	                  <div class="item">
+	            <!--<img src="#/uploadfile/2017/1117/20171117020421769.jpg">--><div class="item_img" style="background: url(uploadfile/20171117020421769.jpg) no-repeat center;background-size: cover"></div>
+				  <div class="item_word">
+					  <h1>热烈庆祝太和环球嘉年华108米摩天轮顺利合圆</h1>
+					  <p>2016年1月27日下午2点18分许，上海奇趣游乐设备有限公司在安徽太和环球嘉年华游乐园，迎来了108米摩天轮安装的最关注的一刻。直径达96米的分</p>
+					  <span class="icon-time"><span>2016-01-21</span></span>
+					  <div style="clear: both"></div>
+					  <a href="pages/show.html">查看详情</a>
+				  </div>
+	          </div>
+	                  <div class="item">
+	            <!--<img src="#/uploadfile/2018/0104/20180104040644454.jpg">--><div class="item_img" style="background: url(uploadfile/20180104040644454.jpg) no-repeat center;background-size: cover"></div>
+				  <div class="item_word">
+					  <h1>喜讯：热烈祝贺奇趣集团成功中标</h1>
+					  <p>             "渤海之眼             "摩天轮建于白浪河大桥中央，该摩天轮轮盘直径145米，是世界上首次采用编织网格形式无轴式的摩天轮设计，建成后将是世界上最高的</p>
+					  <span class="icon-time"><span>2015-12-11</span></span>
+					  <div style="clear: both"></div>
+					  <a href="pages/show.html">查看详情</a>
+				  </div>
+	          </div>
+	                  <div class="item">
+	            <!--<img src="#/uploadfile/2017/1117/20171117014956694.jpg">--><div class="item_img" style="background: url(uploadfile/20171117014956694.jpg) no-repeat center;background-size: cover"></div>
+				  <div class="item_word">
+					  <h1>上海奇趣游乐设备有限公司 2015中国（上海）国际游乐设施设备</h1>
+					  <p>万众瞩目的中国国际游乐设施设备博览会于2015年9月21日在上海世博展览馆 H3 馆隆重开幕。中国游艺机游乐园协会主办的中国国际游乐设施设</p>
+					  <span class="icon-time"><span>2015-09-24</span></span>
+					  <div style="clear: both"></div>
+					  <a href="pages/show.html">查看详情</a>
+				  </div>
+	          </div>
+	          
+	           
+	        </div>
+	</div>
+	    <div class="pagination">
+
+	      <a href="#" class="prev disabled"></a>
+
+	      <a href="#" class="next disabled"></a>
+
+	    </div>
+	</div>
+	  <script type="text/javascript" src="lib/jquery-easing-1.3.0.js"></script>
+
+	  <script type="text/javascript" src="lib/modernizr.mediaqueries.transforms3d.js"></script>
+
+
+	  <script type="text/javascript" src="src/jquery.silver_track.js" charset="utf-8"></script>
+
+	  <script type="text/javascript" src="src/plugins/jquery.silver_track.navigator.js" charset="utf-8"></script>
+
+	  <script type="text/javascript" src="src/plugins/jquery.silver_track.bullet_navigator.js" charset="utf-8"></script>
+
+	  <script type="text/javascript" src="src/plugins/jquery.silver_track.remote_content.js" charset="utf-8"></script>
+
+	  <script type="text/javascript" src="src/plugins/jquery.silver_track.responsive_hub_connector.js" charset="utf-8"></script>
+
+	  <script type="text/javascript" src="src/plugins/jquery.silver_track.css3_animation.js" charset="utf-8"></script>
+
+
+
+	  <script type="text/javascript" src="js/example5.js" charset="utf-8"></script>
+
+
+
+	  <script>
+
+	    $(function() {
+
+	      $.responsiveHub({
+
+	        layouts: {
+
+	          480:  "phone",
+
+	          481:  "small-tablet",
+
+	          731:  "tablet",
+
+	          981:  "web"
+
+	        },
+
+	        defaultLayout: "web"
+
+	      });
+	    });
+
+	  </script>
+			</div>
+	    </div>
+	     <div style="clear: both"></div>
+	      </li>
+	     <li class="list_li">
+	      	<div class="five section">
+	        <div class="container">
+	            <div class="title">
+	                <h3><span>联系</span>我们</h3>
+	                <p><img src="images/fg.png"><span>contact us</span></p>
+	            </div>
+	            <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3FCFLjADGmNyB6zyB1kbbwwq7GzDjQuA"></script>
+	            <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	            <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+				<div id="allmap" class="allmap_index"></div>
+	<script>
+	$(document).ready(function(){
+	  var clientH=document.documentElement.clientHeight; 
+	  var mapH = $('#allmap');
+		mapH.css('height', clientH*300/944+'px');
+		});
+	$(window).resize(function(){
+	  var clientH=document.documentElement.clientHeight; 
+	  var mapH = $('#allmap');
+		mapH.css('height', clientH*300/944+'px');
+		});
+	</script>
+	<!--API-->
+	<script type="text/javascript">
+	//判断网页是否加载完成
+	 document.onreadystatechange = function () {   
+	    if(document.readyState=="complete") {     //网页加载完成时显示下部全屏单页。     
+	         $(".second").css("display","block");
+		     $(".third").css("display","block");
+		     $(".fourth").css("display","block");
+		     $(".five").css("display","block");
+	//开始初始化地图
+	var map = new BMap.Map('allmap');
+		var point = new BMap.Point(121.845557,31.099464);//设置地图中心点。
+		map.centerAndZoom(point, 17);//设置地图比例尺大小，数字大放大，数字小缩小。
+		var marker = new BMap.Marker(point);  // 创建标注
+		map.addOverlay(marker);               // 将标注添加到地图中
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画                        
+		map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+		var opts = {
+		  width : 200,     // 信息窗口宽度
+		  height: 100,     // 信息窗口高度
+		  title : "上海奇趣游乐设备有限公司" , // 信息窗口标题
+		  enableMessage:true,//设置允许信息窗发送短息
+		  message:""
+		}
+		var infoWindow = new BMap.InfoWindow("工厂地址：苏州工业园区浦田路75号朱家工业坊E1栋", opts);  // 创建信息窗口对象 
+		marker.addEventListener("click", function(){          
+			searchInfoWindow1.open(new BMap.Point(121.845557,31.099464)); //开启信息窗口
+		});
+		
+			var searchInfoWindow1 = new BMapLib.SearchInfoWindow(map, "工厂地址：苏州工业园区浦田路75号朱家工业坊E1栋（ps:双击地图左键放大，双击右键缩小。）", {
+			title: "上海奇趣游乐设备有限公司", //标题
+			panel : "panel", //检索结果面板
+			enableAutoPan : true, //自动平移
+			searchTypes :[
+				BMAPLIB_TAB_FROM_HERE, //从这里出发
+				BMAPLIB_TAB_SEARCH   //周边检索
+			]
+		});
+
+			searchInfoWindow1.open(new BMap.Point(121.845557,31.099464));
+
+		
+		
+	var  mapStyle ={ 
+	        features: ["road", "building","water","land"],//隐藏地图上的poi
+	        style : "normal"  //设置地图风格为默认
+	    }
+	map.setMapStyle(mapStyle);
+	 
+	function checkhHtml5()   
+	        {   
+	            if (typeof(Worker) === "undefined")     
+	            {   
+	                if(navigator.userAgent.indexOf("MSIE 9.0")<=0)  
+					   {  
+					 	 alert("定制个性地图示例：IE9以下不兼容，推荐使用百度浏览器、chrome、firefox、safari、IE10");   
+					   }  
+	                
+	            }  
+	        }
+	 checkhHtml5();  
+	                  }   
+	              }   
+	</script>
+	<!--API end	-->
+			
+				<footer>
+				  <div class="foot">
+					<ul>
+	                        <li><a href="index.html">首页<p></p></a></li>
+	               <!--  一级栏目循环开始  -->
+				   <li><a href="pages/about.html">关于奇趣<p></p></a></li>
+				   <!--  一级栏目循环开始  -->
+				   <li class="cur"><a href="pages/show.html">产品展示<p></p></a></li>
+				   <!--  一级栏目循环开始  -->
+				   <li><a href="pages/news.html">新闻资讯<p></p></a></li>
+				   <!--  一级栏目循环开始  -->
+				   <li><a href="pages/contact.html">联系我们<p></p></a></li>
+	                </ul>
+					<div style="clear: both">
+					</div>
+					<div class="foot_contact">
+						<p>工厂地址：苏州工业园区浦田路75号朱家工业坊E1栋<br>电　话：02158260377<br>传　真：***传真***<br>业务联系手机：业务员1:**手机号**           业务员2：**手机号** <br>售后服务手机：售后1：**手机号**<br>电子邮箱：info@qiqufun.com
+						</p>
+						
+					</div>
+					
+					<div class="foot_qr">
+						<span>关注我们</span>
+						<div style="clear: both"></div>
+						<div class="gw">
+					        <img src="images/wechat.png">
+					        <p>官方微信</p>
+				        </div>
+				        <div class="gw">
+					        <img src="images/wechat.png">
+					        <p>官方微信</p>
+				        </div>
+				        <div class="gw">
+					        <img src="images/wechat.png">
+					        <p>官方微信</p>
+				        </div>
+					</div>
+					<div style="clear: both"></div>
+				  </div>
+				</footer>
+				<div class="foot_bottom">
+					<p>Copyright © 2018上海奇趣游乐设备有限公司 All Right Reserved          技术支持：GSH</p>
+				</div>
+			</div>
+	        </div>
+	     <div style="clear: both"></div>
+	      </li>
+	    </ul>
+	    <div class="btn">
+	      <span class="btn_span cur"></span>
+	      <span class="btn_span"></span>
+	      <span class="btn_span"></span>
+	      <span class="btn_span"></span>
+	      <span class="btn_span"></span>
+	    </div>
+	  </div>
+
+	</body>
+	</html>
