@@ -1,5 +1,4 @@
 
-
 window.onload = function () {
   scrollPage();
   parallax();
@@ -462,5 +461,44 @@ function ifIe() { // IE10 以下
             clearTimeout(id);  
         };  
     }  
-}()); 
+}());
 
+$(function () {
+    $(".foot").find('a[href*=#],area[href*=#]').click(function () {
+        console.log(this.pathname)
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                        scrollTop: targetOffset
+                    },
+                    1000);
+                return false;
+            }
+        }
+    });
+    /*客服 S*/
+    $('.slide .icon li').not('.up,.down').mouseenter(function(){
+        $('.slide .info').addClass('hover');
+        $('.slide .info li').hide();
+        $('.slide .info li.'+$(this).attr('class')).show();//.slide .info li.qq
+    });
+    $('.slide').mouseleave(function(){
+        $('.slide .info').removeClass('hover');
+    });
+
+    $('#btnmenu').click(function(){
+        $('.slide').toggle();
+        if($(this).hasClass('index_cy')){
+            $(this).removeClass('index_cy');
+            $(this).addClass('index_cy2');
+        }else{
+            $(this).removeClass('index_cy2');
+            $(this).addClass('index_cy');
+        }
+
+    });
+    /*客服 E*/
+})
