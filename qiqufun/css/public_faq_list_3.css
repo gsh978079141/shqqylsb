@@ -1,0 +1,22 @@
+.tem03-faq_list{}
+.tem03-faq_list .faq-box{counter-reset:div;}
+.tem03-faq_list .faq-li{width:100%;display:block;margin-bottom:15px;color:#232323;position: relative;}
+.tem03-faq_list .faq-li::after{position: absolute;content: counter(div, decimal-leading-zero);font-size:20px;font-family: 'Montserrat', sans-serif;counter-increment:div;top:10px;left:28px;}
+.tem03-faq_list .faq-li .text{width:100%;padding:10px 20px 10px 60px;color:inherit;background-color: #fff;}
+.tem03-faq_list .faq-li .title{font-size:16px;color:inherit;opacity:.85;display:inline-block;max-width:90%;line-height:25px;overflow:hidden;vertical-align:middle;}
+.tem03-faq_list .faq-li .icon{color:inherit;vertical-align:middle;height:25px;line-height:25px;width:25px;overflow:hidden;float:right;font-size:24px;cursor:pointer;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);}
+.tem03-faq_list .faq-li .icon.cur{transform:rotate(0);}
+.tem03-faq_list .faq-li .description{color:inherit;opacity: 0.65;line-height:22px;margin-bottom:5px;padding:25px 28px 25px;}
+@media (max-width:480px){
+.tem03-faq_list .faq-li::after{left:15px;font-size:18px;top:13px;}
+.tem03-faq_list .faq-li .text{padding:10px 10px 10px 48px;}
+.tem03-faq_list .faq-li .title{font-size:15px;}
+.tem03-faq_list .faq-li .icon{font-size: 18px;}
+.tem03-faq_list .faq-li .description{padding:10px 15px;}
+}
+@media (max-width:360px){
+.tem03-faq_list .faq-li .text{padding-left: 44px;}
+.tem03-faq_list .faq-li::after{font-size: 16px;top:15px;}
+.tem03-faq_list .faq-li .title{max-width: 85%;line-height: 24px;font-size: 14px;}
+.tem03-faq_list .faq-li .description{font-size: 12px;}
+}

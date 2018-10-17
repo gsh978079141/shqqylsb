@@ -1,0 +1,14 @@
+/* tem06-video */
+.tem06-video{padding:0;}
+.tem06-video video{width:100%;}
+.tem06-video .title{font-size:24px;color:#333;margin:0 0 15px;}
+.tem06-video .infobar{padding:15px 0;}
+.tem06-video .description{line-height:26px !important;max-height:260px;overflow:hidden;font-size:13px;color:#848484;}
+.tem06-video .about_btn{padding:15px 0;text-transform:uppercase;}
+@media(max-width:768px){
+.tem06-video .infobar{padding:0 0 10px;}
+.tem06-video .title{margin:0 0 5px;}
+.tem06-video .container,
+.tem06-video.full-screen-spacing .col-lg-6:nth-of-type(1){padding-left: 3%!important;padding-right: 3%!important}
+.tem06-video.full-screen-spacing .container.full-screen{padding-left: 0!important;padding-right: 0!important}
+}

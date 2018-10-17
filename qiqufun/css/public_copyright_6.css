@@ -1,0 +1,9 @@
+/*tem06-copyright*/
+.tem06-copyright{background-color:rgba(0,0,0,0.9);padding:10px 0;}
+.tem06-copyright .copyright{color:#999;font-size:12px;line-height:20px;text-align:center;margin-top:5px;}
+.tem06-copyright .share-to{text-align:center;}
+.tem06-copyright .share-to a{margin:5px;display:inline-block;line-height:50px;text-align:center;font-size:30px;}
+@media (max-width:767px){
+.tem06-copyright .share-to a{font-size:20px;line-height:30px;}
+}
+/*tem06-copyright*/

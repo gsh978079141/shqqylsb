@@ -1,0 +1,35 @@
+/*tem11-pro-detail-ms*/
+.tem11-pro-detail-sm .bigpic_wrap{float:left;width:400px;position:relative;padding-top:20px;}
+.tem11-pro-detail-sm .swiper-container{margin-left:auto;margin-right:auto;}
+.tem11-pro-detail-sm .swiper-slide{background-size:cover;background-position:center;}
+.tem11-pro-detail-sm .gallery-top{height:400px;width:100%;box-shadow:0 0 4px rgba(0,0,0,0.2);}
+.tem11-pro-detail-sm .gallery-top img{width:100%;}
+.tem11-pro-detail-sm .min_wrap{width:100%;background-color:rgba(0,0,0,0.05);}
+.tem11-pro-detail-sm .gallery-thumbs{height:70px;width:300px;padding:10px 0;float:left;}
+.tem11-pro-detail-sm .gallery-thumbs img{width:100%;height:100%;}
+.tem11-pro-detail-sm .gallery-thumbs .swiper-slide{height:100%;border:2px solid rgba(0,0,0,0);}
+.tem11-pro-detail-sm .gallery-thumbs .swiper-slide.active{border-color:red;}
+.tem11-pro-detail-sm .swiper-button-next,
+.tem11-pro-detail-sm .swiper-button-prev{position:initial;float:left;margin:0;width:50px;margin-top:10px;background-size:40%;}
+.tem11-pro-detail-sm .mark{width:200px;height:200px;background-color:rgba(0,0,0,0.5);position:absolute;top:0;left:0;display:none;padding:0;}
+.tem11-pro-detail-sm .bigpic_wrap .zoom_pic{position:absolute;left:420px;top:20px;width:100%;height:400px;overflow:hidden;box-shadow:0 0 5px rgba(0,0,0,0.2);display:none;background-color:#fafafa;z-index:10;pointer-events:none;}
+.tem11-pro-detail-sm .bigpic_wrap .zoom_pic img{width:200%;position:absolute;top:0;left:0;max-width:none;}
+/* 商品详情 */
+.tem11-pro-detail-sm .pro_info{float:left;width:calc(100% - 400px);padding:30px;}
+.tem11-pro-detail-sm .pro_info>h1{margin:0;margin-bottom:15px;font-size:20px;line-height:125%;}
+.tem11-pro-detail-sm .pro_info .amount{display:table-row;}
+.tem11-pro-detail-sm .pro_info .metatit{display:table-cell;padding:6px 0;padding-right:16px;white-space:nowrap;}
+.tem11-pro-detail-sm .pro_info .suggest{color:#777;display:table-cell;padding:6px 0;}
+.tem11-pro-detail-sm .pro_info .pro_info_btn{margin-top:30px;position:relative;}
+.tem11-pro-detail-sm .pro_info .pro_info_btn .btn{padding:9px 25px;}
+.tem11-pro-detail-sm .swiper-pagination{display:none;}
+.tem11-pro-detail-sm .detail-share{margin-top:10px;}
+.tem11-pro-detail-sm .detail-share a{margin:0 2px;display:inline-block;width:30px;height:30px;line-height:28px;text-align:center;border-radius:50%;border-style:solid;border-width:1px;font-size:16px;}
+@media(max-width:980px){
+.tem11-pro-detail-sm .gallery-top{height:auto;}
+.tem11-pro-detail-sm .swiper-pagination{display:block;}
+.tem11-pro-detail-sm .min_wrap{display:none;}
+.tem11-pro-detail-sm .bigpic_wrap,
+.tem11-pro-detail-sm .pro_info{float:none;width:100%;}
+.tem11-pro-detail-sm .pro_info{padding:20px 10px;}
+}

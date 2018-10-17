@@ -1,0 +1,5 @@
+.tem02-guide-language .description{font-size:14px;line-height:24px;color:#666;}
+@media (max-width: 768px){
+.tem02-guide-language .container,
+.tem02-guide-language.full-screen-spacing .container.full-screen{padding-left: 3%!important;padding-right: 3%!important}
+}

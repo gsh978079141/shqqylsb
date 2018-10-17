@@ -1,0 +1,26 @@
+/*****effect-grid27*****/
+.mainlist .effect-grid27{width:100%;overflow:hidden;}
+.mainlist .effect-grid27 figure{padding:0 5px 10px;width:100%;overflow:hidden;}
+.mainlist .effect-grid27 .effect27{width:100%;overflow:hidden;position:relative;padding-top:100%;height:auto;}
+.mainlist .effect-grid27 .effect27 img{position:absolute;left:0;top:0;width:100%;min-height:100%;transition:all 0.3s ease-in 0s;}
+.mainlist .effect-grid27 .effect27 .discountTag{position: absolute; left:0; top:0; color: #fff; padding: 0 3px;font-size:14px;display: inline-block;}
+.mainlist .effect-grid27 figcaption{width:100%;background:#fff;}
+.mainlist .effect-grid27 figcaption h3{border-bottom:1px dashed #ccc;font-size:14px;font-weight:normal;line-height:25px !important;height:50px;text-align:center;overflow:hidden;margin:0;padding:0;width:100%;text-align:left;}
+.mainlist .effect-grid27 figcaption h3 a{color:inherit;}
+.mainlist .effect-grid27 figcaption .bg-color-hover:hover h3 a{color:#fff;text-decoration:none;}
+.mainlist .effect-grid27 figcaption .bg-color-hover{color:#333;font-size:16px;font-weight:normal;text-align:center;display:block;padding:10px 15px;}
+.mainlist .effect-grid27 figcaption .bg-color-hover:hover{color:#fff;text-decoration:none;}
+.mainlist .effect-grid27 figcaption .btn{color:#666;font-size:12px;border:1px solid #666;display:inline-block;padding-top:10px;padding:6px 12px;border-radius:3px;text-align:center;margin-top:10px;text-transform:uppercase;}
+.mainlist .effect-grid27 figcaption .btn:hover,
+.mainlist .effect-grid27 figcaption .bg-color-hover:hover .btn{background-color:#fff;color:#666;border-color:transparent;}
+.mainlist .effect-grid27 .pro_price{height:25px;color:#666;padding:3px 10px;background:none;text-transform:uppercase;font-family:arial;text-align:left;}
+.mainlist .effect-grid27 .mod_price i{margin-right:3px;font-family:arial;font-weight:300;font-style:normal;font-size:12px;}
+.mainlist .effect-grid27 .price_new{font-size:18px;font-weight:700;margin-right:8px;}
+.mainlist .effect-grid27 .price_origin{color:#999;font-size:12px;}
+.mainlist .effect-grid27 .price_origin del{font-weight:300;}
+.mainlist .effect-grid27 figcaption .bg-color-hover:hover .price_new,
+.mainlist .effect-grid27 figcaption .bg-color-hover:hover .price_origin{color:#fff;}
+@media (max-width:480px){
+.mainlist .effect-grid27 figcaption h3{font-size:14px;line-height:20px;height:45px;}
+.mainlist .effect-grid27 .col-xs-6{width:100%;}
+}

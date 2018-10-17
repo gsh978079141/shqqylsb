@@ -1,0 +1,35 @@
+/*tem14-title*/
+.tem14-title .border{border-bottom:1px solid rgba(121,121,121,0.3);width:100%;overflow:hidden;}
+.tem14-title .floor{font-size:14px;width:25px;height:25px;text-align:center;line-height:25px;border:1px solid;border-radius:50%;display:inline-block;float:left;}
+.tem14-title .floor section{padding:0;}
+.tem14-title .title-header{float:left;padding:0 10px;}
+.tem14-title .title{display:inline-block;position:relative;z-index:1;font-size:20px;color:#555;}
+.tem14-title .more{float:right;}
+.tem14-title .more a{margin-left:5px;padding-top:5px;font-size:12px;display:block;color:#aaa;line-height:30px;}
+.tem14-title .more:hover a{color:#333;}
+@media (max-width:360px){
+.tem14-title .title-header{max-width:70%;}
+}
+@media (max-width:768px){
+.tem14-title .tem14-list-title{padding-left: 2%!important;padding-right: 2%!important;}
+.tem14-title.full-screen-spacing .full-screen .tem14-list-title{padding-left: 3%!important;padding-right: 3%!important;}
+}
+/*tem14-list-title*/
+.mainlist .tem14-list-title,
+.maindetail .tem14-list-title{padding:15px 0;}
+.mainlist .tem14-list-title .border,
+.maindetail .tem14-list-title .border{border-bottom:1px solid #aaa;width:100%;overflow:hidden;padding:8px 0;}
+.mainlist .tem14-list-title .floor,
+.maindetail .tem14-list-title .floor{font-size:14px;width:25px;height:25px;text-align:center;line-height:25px;border:1px solid;border-radius:50%;display:inline-block;float:left;}
+.mainlist .tem14-list-title .floor section,
+.maindetail .tem14-list-title .floor section{padding:0;}
+.mainlist .tem14-list-title .title-header,
+.maindetail .tem14-list-title .title-header{float:left;padding:0 10px;}
+.mainlist .tem14-list-title .title,
+.maindetail .tem14-list-title .title{display:inline-block;position:relative;z-index:1;color:#555;}
+.mainlist .tem14-list-title .more,
+.maindetail .tem14-list-title .more{float:right;}
+.mainlist .tem14-list-title .more a,
+.maindetail .tem14-list-title .more a{margin-left:5px;padding-top:5px;display:block;color:#aaa;line-height:30px;}
+.mainlist .tem14-list-title .more:hover a,
+.maindetail .tem14-list-title .more:hover a{color:#333;}

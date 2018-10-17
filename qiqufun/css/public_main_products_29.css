@@ -1,0 +1,52 @@
+.tem29-main-products .irr-box >.col-md-3{padding:0 15px 0 0;}
+.tem29-main-products .irr-box >.col-md-9{padding:0 0 0 15px;}
+.tem29-main-products.content-right .irr-box >.col-md-3{padding:0 0 0 15px;}
+.tem29-main-products.content-right .irr-box >.col-md-9{padding:0 15px 0 0;}
+.tem29-main-products .tem58-text{width:100%;overflow:hidden;position:relative;height:430px;}
+.tem29-main-products .tem58-text a{position:relative;display:inline-block;width:100%;height:100%;}
+.tem29-main-products .tem58-text a::before{position:absolute;content:"";left:0;right:0;z-index:-1;bottom:0;transform: scaleX(0);transform-origin: 50% 50% 0;transition-duration: 0.3s;transition-property: transform;transition-timing-function: ease-out;background:rgba(255, 255, 255, 0.15);border:10px solid rgba(255, 255, 255, 0.45);width:100%;height:100%;}
+.tem29-main-products .tem58-text:hover a::before{-webkit-transform: scaleX(1);transform: scaleX(1);z-index:1;}
+.tem29-main-products .tem58-text a img{width:100%;height:100%;}
+.tem29-main-products .tem58-text h3{position:absolute;padding:15px;background:rgba(0,0,0,0.5);color:#fff;line-height:25px;font-size:20px;overflow:hidden;text-overflow:ellipsis;left:0;top:43%;text-align:center;width:100%;margin:0;z-index:3;}
+.tem29-main-products .irr-right .col-md-6:nth-of-type(odd){padding: 0 15px 0 0;}
+.tem29-main-products .irr-right .col-md-6:nth-of-type(even){padding: 0 0 0 15px;}
+.tem29-main-products .irr-right .col-md-6:nth-of-type(1) .tem59-text,
+.tem29-main-products .irr-right .col-md-6:nth-of-type(2) .tem59-text{margin-bottom:30px;}
+.tem29-main-products .tem59-text{width:100%;overflow:hidden;position:relative;height:200px;}
+.tem29-main-products .tem59-text a{position:relative;display:inline-block;width:100%;height:100%;}
+.tem29-main-products .tem59-text a::before{position:absolute;content:"";background:rgba(255, 255, 255, 0.1);left:0;top:0;height:1px;width:0;transition:all 0.3s ease-out 0s;}
+.tem29-main-products .tem59-text a::after{position:absolute;content:"";background:rgba(255, 255, 255, 0.1);right:0;bottom:0;height:0;width:0;transition:all 0.3s ease-out 0s;}
+.tem29-main-products .tem59-text:hover a::before,
+.tem29-main-products .tem59-text:hover a::after{width:100%;height:100%;}
+.tem29-main-products .tem59-text a img{width:100%;height:100%;}
+.tem29-main-products .tem59-text h3{position:absolute;padding:0 15px;color:rgba(255,255,255,0.8);font-size:20px;font-weight:500;overflow:hidden;width:100%;text-align:center;left:0;top:28%;letter-spacing:2px;;}
+@media (max-width:991px){
+.tem29-main-products .irr-box >.col-sm-3{padding:0 10px 0 0;}
+.tem29-main-products .irr-box >.col-sm-9{padding:0 0 0 10px;}
+.tem29-main-products.content-right .irr-box >.col-md-3{padding:0 0 0 10px;}
+.tem29-main-products.content-right .irr-box >.col-md-9{padding:0 10px 0 0;}
+.tem29-main-products .irr-right .col-md-6:nth-of-type(odd){padding: 0 10px 0 0;}
+.tem29-main-products .irr-right .col-md-6:nth-of-type(even){padding: 0 0 0 10px;}
+.tem29-main-products .irr-right .col-md-6:nth-of-type(1) .tem59-text,
+.tem29-main-products .irr-right .col-md-6:nth-of-type(2) .tem59-text{margin-bottom:20px;}
+.tem29-main-products .tem58-text{height:270px;}
+.tem29-main-products .tem58-text h3{padding:10px;font-size:16px;}
+.tem29-main-products .tem59-text{height:125px;}
+.tem29-main-products .tem59-text h3{top:20%;font-size:16px;}
+}
+@media (max-width:768px){
+.tem29-main-products .container{padding-left: 3%!important;padding-right: 3%!important}
+.tem29-main-products.full-screen-spacing .container.full-screen{padding-left: 0!important;padding-right: 0!important}
+.tem29-main-products .irr-box > .col-md-3,
+.tem29-main-products .irr-box > .col-md-9{padding:0!important;margin:5px 0;}
+}
+@media (max-width:767px){
+.tem29-main-products .tem58-text{height:auto;}
+.tem29-main-products .tem59-text{height:200px;}
+.tem29-main-products .tem59-text h3{top:35%;}
+}
+@media (max-width:480px){
+.tem29-main-products .irr-right .col-md-6{width:100%;padding:0!important;}
+.tem29-main-products .irr-right .col-md-6 .tem59-text{margin-bottom:10px;}
+.tem29-main-products .tem59-text h3{top:45%;margin:0;}
+}

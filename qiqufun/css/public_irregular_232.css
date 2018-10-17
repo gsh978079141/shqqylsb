@@ -1,0 +1,19 @@
+.tem232-irregular{}
+.tem232-irregular .graphic ._li{margin-top:60px;}
+.tem232-irregular .graphic ._li a{display:block;color:inherit;}
+.tem232-irregular .graphic ._li .img{position:relative;}
+.tem232-irregular .graphic ._li img{width:100%;position:relative;}
+.tem232-irregular .graphic ._li .tem232_bg{position:absolute;top:50%;left:0;width:100%;height:30%;z-index:-1;transform:translateY(-50%);box-shadow:0 0 16px rgba(122,122,122,.2);transition:0.5s cubic-bezier(0.55, 0.05, 0.22, 0.99);background-size:cover;background-position:50%;background-repeat:no-repeat;}
+.tem232-irregular .graphic ._li .text{position:relative;z-index:4;margin-top:-16px;transition:0.5s cubic-bezier(0.55, 0.05, 0.22, 0.99);}
+.tem232-irregular .graphic ._li .text .title{line-height:1}
+.tem232-irregular .graphic ._li .text .subtitle{margin-top:4px;line-height:1;font-size:16px;}
+.tem232-irregular .graphic ._li .text .description{margin-top:8px;color:#999;line-height:1}
+@media (min-width:768px){
+.tem232-irregular .graphic ._li:hover .tem232_bg{height:100%;}
+.tem232-irregular .graphic ._li:hover .text{transform:translateY(45px);}
+}
+@media (max-width:768px){
+.tem232-irregular .graphic ._li{margin-top:15px;}
+.tem232-irregular .container{padding-left:2%!important;padding-right:2%!important}
+.tem232-irregular.full-screen-spacing .container{padding-left: 0!important;padding-right: 0!important}
+}

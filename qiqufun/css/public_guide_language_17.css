@@ -1,0 +1,9 @@
+.tem17-guide-language{position:relative;text-align:center;}
+.tem17-guide-language .description{color:#555;line-height: 170%;border-color:#999;text-align: left;}
+.tem17-guide-language .description span.dropcap{border: 1px solid;border-color:inherit;background: transparent;width: 68px;height: 68px;margin-right: 20px;float: left;display: inline-block;text-align: center;line-height: 68px;vertical-align: middle;font-size: 32px;position: relative;overflow: hidden;color:inherit;}
+
+@media (max-width: 768px){
+.tem17-guide-language .container,
+.tem17-guide-language.full-screen-spacing .container.full-screen{padding-left: 3%!important;padding-right: 3%!important}
+.tem17-guide-language .description span.dropcap{font-size: 20px!important;line-height: 52px!important;width: 52px;height: 52px;}
+}

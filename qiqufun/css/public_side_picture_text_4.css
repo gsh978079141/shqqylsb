@@ -1,0 +1,5 @@
+/*tem04-side-picture-text*/
+.tem04-side-picture-text{background:#fff;margin-bottom:15px;width:100%;overflow:hidden;border:1px solid #f0f0f0;padding-bottom:15px;}
+.tem04-side-picture-text .title{font-size:14px;color:#646464;height:50px;line-height:50px !important;border-bottom:1px solid #e6e6e6;white-space:nowrap;text-overflow:ellipsis;padding:0 15px;}
+.tem04-side-picture-text .spt_pic{width:100%;padding:15px 15px 0;}
+.tem04-side-picture-text .spt_pic img{width:100%;}

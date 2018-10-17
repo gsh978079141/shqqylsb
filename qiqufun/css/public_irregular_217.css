@@ -1,0 +1,10 @@
+.tem217-irregular{width:100%}
+.tem217-irregular .wrap{width:100%;position:relative;overflow:hidden}
+.tem217-irregular .wrap ul{width:9999999999px;position:relative}
+.tem217-irregular .wrap ul li{float:left;padding:0 5px}
+.tem217-irregular .wrap ul li img{height:auto;width:100%}
+@media(max-width:768px){
+.tem217-irregular .wrap ul li{padding:0 1vw;}
+.tem217-irregular .container{padding-left: 3%!important;padding-right: 3%!important}
+.tem217-irregular.full-screen-spacing .container{padding-left: 0!important;padding-right: 0!important}
+}

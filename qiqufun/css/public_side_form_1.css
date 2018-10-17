@@ -1,0 +1,8 @@
+/*tem01-side-form*/
+.tem01-side-form{background:#fff;margin-bottom:15px;border:1px solid rgba(0, 0, 0, 0.15);}
+.tem01-side-form h3{padding:10px 15px;margin:0;font-size:16px;}
+.tem01-side-form h6{font-size:12px;line-height:145%;color:#999;padding:0 15px;margin:0;}
+.tem01-side-form i{font-style:normal;}
+.tem01-side-form .yzmbox{position:relative;}
+.tem01-side-form .yzmbox a{width:50px;height:25px;margin:5px;position:absolute;top:0;right:15px;}
+.tem01-side-form .yzmbox a img{width:100%;height:100%;}

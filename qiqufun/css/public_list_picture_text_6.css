@@ -1,0 +1,8 @@
+/*tem06-list-picture-text*/
+.tem06-list-picture-text{width:100%;padding:15px 0;line-height:24px;font-size:14px;color:#666;}
+@media (max-width:900px){
+.tem06-list-picture-text .main{width:600px;}
+}
+@media (max-width:767px){
+.tem06-list-picture-text .main{width:70%;}
+}

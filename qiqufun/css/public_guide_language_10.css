@@ -1,0 +1,23 @@
+.tem10-guide-language{transition:all .8s ease;-o-transition:all .8s ease;-moz-transition:all .8s ease;-ms-transition:all .8s ease;-webkit-transition:all .8s ease;position: relative;}
+.tem10-guide-language.STop{transform:scale(0.9);-o-transform:scale(0.9);-moz-transform:scale(0.9);-ms-transform:scale(0.9);-webkit-transform:scale(0.9);}
+.tem10-guide-language.STop .move_bg{opacity: 1;-o-transition:all .8s ease;-moz-transition:all .8s ease;-ms-transition:all .8s ease;transition:all .8s ease;-webkit-transition:all .8s ease;}
+.tem10-guide-language .move_bg{position: absolute;left:0;top:0;width:100%;height:100%;opacity: 0;-o-transition:all .8s ease;-moz-transition:all .8s ease;-ms-transition:all .8s ease;transition:all .8s ease;-webkit-transition:all .8s ease;}
+.tem10-guide-language .text{width:70%;color:#fff;text-align:center;margin:0 auto;}
+.tem10-guide-language .text .title{font-size: 34px;line-height: 45px;color:inherit;padding:0 50px;}
+.tem10-guide-language .text .description{padding:30px 0;font-size: 20px;color:rgba(255,255,255,.6);}
+.tem10-guide-language .text .more{text-align:center;}
+.tem10-guide-language .text .more a{padding:20px 45px;border-radius:50px;font-weight: 600;background:rgba(0,0,0,.6);font-size: 14px;border:none;}
+@media (max-width:768px){
+.tem10-guide-language .container{padding-left: 3%!important;padding-right: 3%!important}
+.tem10-guide-language.full-screen-spacing .container.full-screen{padding-left: 0!important;padding-right: 0!important}
+.tem10-guide-language .text{width:90%;}
+.tem10-guide-language .text .title{font-size:24px;line-height: 36px;padding:0 30px;}
+.tem10-guide-language .text .more a{padding:16px 32px;font-weight: 300;}
+}
+@media (max-width:480px){
+.tem10-guide-language {padding:30px 0 !important;}
+.tem10-guide-language .text{width:100%;padding:0 15px;}
+.tem10-guide-language .text .title{font-size:18px;line-height: 30px;padding:0;}
+.tem10-guide-language .text .description{font-size: 14px;padding:20px 0;}
+.tem10-guide-language .text .more a{padding:10px 26px;font-size: 12px;}
+}

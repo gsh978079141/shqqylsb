@@ -1,0 +1,18 @@
+/*****public_page_list_06*****/
+.page_list_06{padding:1em 0;width:100%;padding:20px 0 60px;}
+.page_list_06 li{width:36px;height:36px;display:inline-block;}
+.page_list_06 li a{width:100%;height:100%;color:#a9a9a9;font-size:12px;margin-right:5px;border-radius:0;vertical-align:middle;display:inline-block;text-align:center;height:36px;line-height:36px;width:36px;font-family:"HELVETICANEUELTPRO-THEX","微软雅黑","Arial";margin-bottom:5px;}
+.page_list_06 li a.current{color:#fff;background:inherit;}
+.page_list_06 a:hover{color:#fff;}
+.page_list_06 .pageNav{display:inline-block;width:100%;text-align:left;}
+.page_list_06 .total{margin:0 8px 8px 0;padding:5px 15px;line-height:25px;color:#999;display:inline-block;font-family:"HELVETICANEUELTPRO-THEX","微软雅黑","Arial";}
+.page_list_06 .pagecontrol{display:inline-block;vertical-align:middle;}
+.page_list_06 .form-inline .input-group > .form-control{border-radius:0;box-shadow:none;text-align:center;width:40px;padding:5px 0;border:1px solid #eee;color:#999;}
+.page_list_06 .form-inline .input-group > .form-control:focus{color:#333;}
+.page_list_06 .form-inline .input-group-btn .btn{color:#999;border:1px solid #eee;border-radius:0;box-shadow:none;}
+.page_list_06 .form-inline .input-group-btn .btn:hover{color:#333;background:none;}
+.page_list_06 .pageNext,.page_list_06 .pagecontrol,.page_list_06 .pagecontrol,.page_list_06 .total,.page_list_06 .pagePre{display:none;}
+@media (max-width:768px){
+.page_list_06{padding:20px 0;}
+.page_list_06 .pagecontrol{display:none;}
+}

@@ -1,0 +1,18 @@
+/*tem01-title*/
+.tem01-title{text-align:center;}
+.tem01-title .title{padding:0 15px;}
+.tem01-title .subtitle{font-size:13px;line-height:30px;color:#888;padding:0 15px;}
+.tem01-title .more{display:none;}
+@media (max-width: 768px){
+.tem01-title .title,
+.tem01-title .subtitle{padding-left: 2%!important;padding-right: 2%!important;}
+.tem01-title.full-screen-spacing .full-screen .title,
+.tem01-title.full-screen-spacing .full-screen .subtitle{padding-left: 3%!important;padding-right: 3%!important;}
+}
+/*tem01-list-title*/
+.mainlist .tem01-list-title,
+.maindetail .tem01-list-title{text-align:center;padding:15px 0;}
+.mainlist .tem01-list-title .subtitle,
+.maindetail .tem01-list-title .subtitle{line-height:30px;color:#888;}
+.mainlist .tem01-list-title .more,
+.maindetail .tem01-list-title .more{display:none;}
