@@ -4,7 +4,7 @@
 .tem04-video-list-ms .col-md-6,
 .tem04-video-list-ms .col-md-2{padding:0 5px;}
 .tem04-video-list-ms .box{width:100%;overflow:hidden;margin-bottom:10px;position:relative;}
-.tem04-video-list-ms .image{position:relative;padding-top:75%;}
+.tem04-video-list-ms .image{position:relative;padding-top:0%;}
 .tem04-video-list-ms .image a{width:100%;height:100%;position:absolute;left:0;top:0;}
 .tem04-video-list-ms .image>a::after{position:absolute;width:100%;height:100%;background:#000;display:block;opacity:0;left:0;top:0;content:"";opacity:0;transition:all 0.3s linear 0s;z-index:4;}
 .tem04-video-list-ms .image:hover>a::after{opacity:0.4;}
