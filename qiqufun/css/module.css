@@ -18411,7 +18411,7 @@ opacity:1}
 .tem19-footer .footer-nav a:hover {text-decoration:underline}
 .tem19-footer .tit,.tem19-footer .title {display:none}
 .tem19-footer .footer-box {padding:20px 0 10px}
-.tem19-footer .footer-box .desc {font-size:12px;line-height:24px;color:#999}
+.tem19-footer .footer-box .desc {font-size:13px;line-height:25px;color:#999}
 .tem19-footer img {max-width:100%}
 .tem19-footer .footer-box .col-lg-4 {border-left:1px solid #ccc;margin-bottom:10px}
 .tem19-footer .footer-box .col-xs-12:nth-of-type(3) {border-right:1px solid #ccc}
@@ -18441,7 +18441,7 @@ opacity:1}
 .tem20-footer .link li::before {content:">";font-family:'宋体';color:inherit;font-size:12px;left:0;top:8px;position:absolute}
 .tem20-footer .link li a {color:#aaa;padding:7px 0;display:inline-block;width:100%}
 .tem20-footer .links-info {font-size:13px;line-height:24px;width:100%}
-.tem20-footer .form-text {font-size:14px;color:#aaa;margin-bottom:10px}
+.tem20-footer .form-text {fonttem20-footer-size:14px;color:#aaa;margin-bottom:10px}
 .tem20-footer .form-group .form-control {border-radius:0}
 .tem20-footer .form-group .input-group-addon {padding:0 5px 0 0}
 .tem20-footer .form-group .btn {border-radius:0;font-size:12px}
