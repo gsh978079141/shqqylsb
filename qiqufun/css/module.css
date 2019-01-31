@@ -18411,6 +18411,8 @@ opacity:1}
 .tem19-footer .footer-nav a:hover {text-decoration:underline}
 .tem19-footer .tit,.tem19-footer .title {display:none}
 .tem19-footer .footer-box {padding:20px 0 10px}
+.tem19-footer .footer-box div{width: 1000px;}
+
 .tem19-footer .footer-box .desc {font-size:13px;line-height:25px;color:#999}
 .tem19-footer img {max-width:100%}
 .tem19-footer .footer-box .col-lg-4 {border-left:1px solid #ccc;margin-bottom:10px}
